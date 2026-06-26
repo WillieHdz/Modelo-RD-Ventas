@@ -889,7 +889,7 @@ function setStyle(st){
   rerender();
 }
 function fixSize(){map.invalidateSize(true);}
-setTimeout(fixSize,200);setTimeout(fixSize,600);setTimeout(fixSize,1200);window.addEventListener('resize',fixSize);
+setTimeout(fixSize,200);setTimeout(fixSize,600);setTimeout(fixSize,1200);setTimeout(fixSize,2500);setTimeout(fixSize,4000);window.addEventListener('resize',fixSize);
 try{ var _ro=new ResizeObserver(function(){ map.invalidateSize(true); }); _ro.observe(document.getElementById('mapwrap')); _ro.observe(document.body); }catch(e){}
 
 let layer=null, markers=[], labels=[];
